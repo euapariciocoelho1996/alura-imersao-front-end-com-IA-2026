@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GigaCore - Peças para PCs Gamer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GigaCore</h1>
+      <p>As melhores peças para o seu PC Gamer</p>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <form action="/busca" method="get">
+        <label for="busca">Buscar produto:</label>
+        <input
+          type="text"
+          id="busca"
+          name="q"
+          placeholder="Ex: placa de vídeo, processador..."
+        />
+        <button type="submit">Buscar</button>
+      </form>
+      <p>
+        <a href="/login">Entrar</a> | <a href="/cadastro">Criar conta</a> |
+        <a href="/carrinho">🛒 Carrinho (0)</a>
+      </p>
+    </header>
+
+    <main>
+      <!-- BANNER PRINCIPAL -->
+      <section id="inicio">
+        <h2>Monte o PC dos seus sonhos</h2>
+        <p>
+          Processadores, placas de vídeo, memórias RAM, SSDs e muito mais com os
+          melhores preços do mercado.
+        </p>
+        <a href="#produtos">Ver todos os produtos</a>
+      </section>
+
+      <!-- CATEGORIAS -->
+      <section id="categorias">
+        <h2>Categorias</h2>
+        <ul>
+          <li><a href="/categoria/processadores">Processadores</a></li>
+          <li><a href="/categoria/placas-de-video">Placas de Vídeo</a></li>
+          <li><a href="/categoria/memoria-ram">Memória RAM</a></li>
+          <li><a href="/categoria/ssd-hd">SSD e HD</a></li>
+          <li><a href="/categoria/placas-mae">Placas-mãe</a></li>
+          <li><a href="/categoria/fontes">Fontes</a></li>
+          <li><a href="/categoria/gabinetes">Gabinetes</a></li>
+          <li><a href="/categoria/coolers">Coolers e Refrigeração</a></li>
+          <li><a href="/categoria/perifericos">Periféricos</a></li>
+          <li><a href="/categoria/monitores">Monitores</a></li>
+        </ul>
+      </section>
+
+      <!-- OFERTAS -->
+      <section id="ofertas">
+        <h2>Ofertas da Semana</h2>
+
+        <article>
+          <h3>RTX 4070 Super - ASUS TUF Gaming</h3>
+          <p>
+            Placa de vídeo NVIDIA GeForce RTX 4070 Super, 12GB GDDR6X, DLSS 3,
+            Ray Tracing.
+          </p>
+          <p><del>R$ 3.899,00</del> <strong>R$ 3.299,00</strong></p>
+          <p><small>10% de desconto no PIX</small></p>
+          <a href="/produto/rtx-4070-super-asus-tuf">Ver produto</a>
+          <button type="button">Adicionar ao carrinho</button>
+        </article>
+
+        <article>
+          <h3>Processador AMD Ryzen 7 7700X</h3>
+          <p>
+            8 núcleos, 16 threads, frequência base 4.5GHz, boost até 5.4GHz.
+            Socket AM5.
+          </p>
+          <p><del>R$ 1.599,00</del> <strong>R$ 1.299,00</strong></p>
+          <p><small>10% de desconto no PIX</small></p>
+          <a href="/produto/ryzen-7-7700x">Ver produto</a>
+          <button type="button">Adicionar ao carrinho</button>
+        </article>
+
+        <article>
+          <h3>SSD Kingston NV2 1TB NVMe</h3>
+          <p>
+            Leitura até 3500MB/s, escrita até 2100MB/s. Interface PCIe 4.0 NVMe
+            M.2 2280.
+          </p>
+          <p><del>R$ 389,00</del> <strong>R$ 299,00</strong></p>
+          <p><small>10% de desconto no PIX</small></p>
+          <a href="/produto/ssd-kingston-nv2-1tb">Ver produto</a>
+          <button type="button">Adicionar ao carrinho</button>
+        </article>
+      </section>
+
+      <!-- PRODUTOS EM DESTAQUE -->
+      <section id="produtos">
+        <h2>Produtos em Destaque</h2>
+
+        <!-- PROCESSADORES -->
+        <section>
+          <h3>Processadores</h3>
+
+          <article>
+            <h4>Intel Core i9-14900K</h4>
+            <p>
+              24 núcleos (8P + 16E), 32 threads, boost até 6.0GHz. Socket
+              LGA1700.
+            </p>
+            <p><strong>R$ 2.899,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/i9-14900k">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+
+          <article>
+            <h4>AMD Ryzen 5 7600X</h4>
+            <p>
+              6 núcleos, 12 threads, boost até 5.3GHz. Socket AM5. Excelente
+              custo-benefício.
+            </p>
+            <p><strong>R$ 899,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/ryzen-5-7600x">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+        </section>
+
+        <!-- PLACAS DE VÍDEO -->
+        <section>
+          <h3>Placas de Vídeo</h3>
+
+          <article>
+            <h4>RX 7800 XT - Sapphire Pulse 16GB</h4>
+            <p>
+              AMD Radeon RX 7800 XT, 16GB GDDR6, excelente desempenho em 1440p.
+            </p>
+            <p><strong>R$ 2.799,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/rx-7800-xt-sapphire">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+
+          <article>
+            <h4>RTX 4060 - Gigabyte Gaming OC 8GB</h4>
+            <p>
+              NVIDIA GeForce RTX 4060, 8GB GDDR6, DLSS 3.0, ideal para 1080p.
+            </p>
+            <p><strong>R$ 1.799,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/rtx-4060-gigabyte">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+        </section>
+
+        <!-- MEMÓRIA RAM -->
+        <section>
+          <h3>Memória RAM</h3>
+
+          <article>
+            <h4>Memória Kingston Fury Beast DDR5 32GB (2x16GB) 6000MHz</h4>
+            <p>
+              Kit dual channel DDR5, XMP 3.0, latência CL36. Alta performance
+              para jogos.
+            </p>
+            <p><strong>R$ 749,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/kingston-fury-ddr5-32gb">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+
+          <article>
+            <h4>Memória Corsair Vengeance DDR4 16GB (2x8GB) 3200MHz</h4>
+            <p>
+              Kit dual channel DDR4, XMP 2.0, CL16. Ótima escolha para
+              plataformas AM4 e LGA1200.
+            </p>
+            <p><strong>R$ 299,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/corsair-vengeance-ddr4-16gb">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+        </section>
+
+        <!-- PLACAS-MÃE -->
+        <section>
+          <h3>Placas-mãe</h3>
+
+          <article>
+            <h4>ASUS ROG Strix B650E-F Gaming WiFi</h4>
+            <p>
+              Socket AM5, DDR5, PCIe 5.0, WiFi 6E, 2.5G LAN. Compatível com
+              Ryzen 7000.
+            </p>
+            <p><strong>R$ 1.699,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/asus-rog-b650e-f">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+
+          <article>
+            <h4>MSI Pro Z790-P WiFi</h4>
+            <p>
+              Socket LGA1700, DDR5, PCIe 5.0, WiFi 6E. Compatível com Intel 12ª,
+              13ª e 14ª geração.
+            </p>
+            <p><strong>R$ 1.199,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/msi-pro-z790-p">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+        </section>
+
+        <!-- FONTES -->
+        <section>
+          <h3>Fontes</h3>
+
+          <article>
+            <h4>Corsair RM850x 850W 80 Plus Gold Modular</h4>
+            <p>
+              Totalmente modular, 80 Plus Gold, proteção contra sobretensão e
+              curto-circuito.
+            </p>
+            <p><strong>R$ 899,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/corsair-rm850x">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+
+          <article>
+            <h4>EVGA 650 GQ 650W 80 Plus Gold</h4>
+            <p>Semi-modular, 80 Plus Gold, ventilador de 140mm silencioso.</p>
+            <p><strong>R$ 499,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/evga-650-gq">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+        </section>
+
+        <!-- GABINETES -->
+        <section>
+          <h3>Gabinetes</h3>
+
+          <article>
+            <h4>Lian Li PC-O11 Dynamic EVO</h4>
+            <p>
+              Mid Tower, painel lateral em vidro temperado, suporte a ATX/E-ATX,
+              excelente airflow.
+            </p>
+            <p><strong>R$ 799,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/lian-li-o11-evo">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+
+          <article>
+            <h4>NZXT H510 Flow Branco</h4>
+            <p>
+              Mid Tower compacto, painel frontal perfurado, painel lateral em
+              vidro temperado.
+            </p>
+            <p><strong>R$ 499,00</strong></p>
+            <p>Em estoque</p>
+            <a href="/produto/nzxt-h510-flow">Ver produto</a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+        </section>
+      </section>
+
+      <!-- MONTE SEU PC -->
+      <section id="monte-seu-pc">
+        <h2>Monte seu PC Personalizado</h2>
+        <p>
+          Use nossa ferramenta de montagem e encontre as peças compatíveis para
+          o seu setup ideal.
+        </p>
+        <a href="/monte-seu-pc">Montar meu PC agora</a>
+      </section>
+
+      <!-- INFORMAÇÕES DE COMPRA -->
+      <section id="vantagens">
+        <h2>Por que comprar na GigaCore?</h2>
+        <ul>
+          <li>Frete grátis para compras acima de R$ 500,00</li>
+          <li>Parcele em até 12x sem juros</li>
+          <li>10% de desconto no PIX ou boleto</li>
+          <li>Garantia de 12 meses em todos os produtos</li>
+          <li>Troca e devolução em até 7 dias</li>
+          <li>Suporte técnico especializado</li>
+        </ul>
+      </section>
+
+      <!-- SOBRE -->
+      <section id="sobre">
+        <h2>Sobre a GigaCore</h2>
+        <p>
+          A GigaCore é uma loja especializada em peças e componentes para
+          computadores gamer. Fundada em 2018, temos como missão oferecer os
+          melhores produtos com preços competitivos e atendimento especializado
+          para gamers e entusiastas de tecnologia em todo o Brasil.
+        </p>
+        <p>
+          Trabalhamos com as principais marcas do mercado: ASUS, MSI, Gigabyte,
+          Corsair, Kingston, AMD, Intel, NVIDIA, NZXT, Lian Li, Cooler Master e
+          muito mais.
+        </p>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato">
+        <h2>Contato</h2>
+        <p>
+          Email:
+          <a href="mailto:contato@gigacore.com.br">contato@gigacore.com.br</a>
+        </p>
+        <p>
+          WhatsApp: <a href="https://wa.me/5511999999999">(11) 99999-9999</a>
+        </p>
+        <p>Horário de atendimento: Segunda a Sexta, das 9h às 18h</p>
+
+        <h3>Envie uma mensagem</h3>
+        <form action="/contato" method="post">
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" />
+          </div>
+          <div>
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Enviar mensagem</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="/sobre">Sobre nós</a></li>
+          <li><a href="/politica-privacidade">Política de Privacidade</a></li>
+          <li><a href="/termos-de-uso">Termos de Uso</a></li>
+          <li><a href="/trocas-devolucoes">Trocas e Devoluções</a></li>
+          <li><a href="/faq">Perguntas Frequentes</a></li>
+          <li><a href="/contato">Contato</a></li>
+        </ul>
+      </nav>
+      <p>
+        Redes sociais:
+        <a href="https://instagram.com/gigacore">Instagram</a> |
+        <a href="https://youtube.com/gigacore">YouTube</a> |
+        <a href="https://twitter.com/gigacore">Twitter / X</a>
+      </p>
+      <p>
+        Formas de pagamento: PIX | Boleto | Cartão de Crédito (até 12x) | Cartão
+        de Débito
+      </p>
+      <p>&copy; 2024 GigaCore Tecnologia LTDA. Todos os direitos reservados.</p>
+      <p>CNPJ: 00.000.000/0001-00 | Rua das Tecnologias, 42 - São Paulo, SP</p>
+    </footer>
+  </body>
+</html>

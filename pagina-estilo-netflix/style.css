@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+}
+.sessao1 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.perfil {
+  flex-grow: 1; /* Se sobrar espaço, posso crescer junto com os outros */
+  flex-shrink: 1; /* Se faltar espaço, posso encolher para caber */
+  flex-basis: 200px; /* tamanho base inicial */
+
+  max-width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
