@@ -1,28 +1,146 @@
+/* =========================
+   RESET & GLOBAL
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  font-family:
+    "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+/* =========================
+   FONTS
+========================= */
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("./fonts/NetflixSans-Rg.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("./fonts/NetflixSans-Md.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("./fonts/NetflixSans-Bd.ttf") format("truetype");
+  font-weight: 700;
+}
+
+/* =========================
+   LAYOUT PRINCIPAL
+========================= */
+.selecao-perfis {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+}
+
+/* =========================
+   TIPOGRAFIA
+========================= */
 h1 {
   text-align: center;
+  color: #fff;
+  font-size: 3.5vw;
+  font-weight: 500;
 }
-.sessao1 {
+
+h2 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: grey;
+  transition: 0.3s;
+}
+
+p {
+  color: grey;
+  transition: 0.3s;
+}
+
+/* =========================
+   LISTA DE PERFIS
+========================= */
+.lista-perfis {
   display: flex;
   justify-content: center;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
+
+  list-style: none;
+  margin: 40px;
+  padding: 0;
 }
+
+.lista-perfis li {
+  display: flex;
+}
+
+/* =========================
+   PERFIL
+========================= */
 .perfil {
-  flex-grow: 1; /* Se sobrar espaço, posso crescer junto com os outros */
-  flex-shrink: 1; /* Se faltar espaço, posso encolher para caber */
-  flex-basis: 200px; /* tamanho base inicial */
-
-  max-width: 250px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: bisque;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
+  max-width: 250px;
+
+  margin: 0 0.5em;
+  border-radius: 8px;
 }
 
+/* HOVER PERFIL */
+.perfil:hover > img {
+  border-color: #fff;
+  cursor: pointer;
+}
+
+.perfil:hover > h2 {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* =========================
+   IMAGEM
+========================= */
 img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
+
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+/* =========================
+   GERENCIAR PERFIS
+========================= */
+.gerenciar-perfis {
+  width: 12rem;
+  margin-top: 30px;
+  padding: 12px;
+
+  display: flex;
+  justify-content: center;
+
+  border: 2px solid grey;
+  transition: 0.3s;
+}
+
+.gerenciar-perfis:hover {
+  border-color: #fff;
+  cursor: pointer;
+}
+
+.gerenciar-perfis:hover > p {
+  color: #fff;
 }

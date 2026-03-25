@@ -1,44 +1,55 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/pagina-estilo-netflix/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Perfis</title>
   </head>
+
   <body>
-    <main>
-      <h1>Quem está assistindo?</h1>
-      <section class="sessao1">
-        <div class="perfil">
-          <img
-            src="../pagina-estilo-netflix/assets/perfil1.avif"
-            alt="Perfil para usuário 1"
-          />
-          <h2>Perfil 1</h2>
-        </div>
-        <div class="perfil">
-          <img
-            src="../pagina-estilo-netflix/assets/perfil2.avif"
-            alt="Perfil para usuário 2"
-          />
-          <h2>Perfil 2</h2>
-        </div>
-        <div class="perfil">
-          <img
-            src="../pagina-estilo-netflix/assets/perfil3.avif"
-            alt="Perfil para usuário 3"
-          />
-          <h2>Perfil 3</h2>
-        </div>
-        <div class="perfil">
-          <img
-            src="../pagina-estilo-netflix/assets/perfil4.avif"
-            alt="Perfil para usuário 4"
-          />
-          <h2>Perfil 4</h2>
-        </div>
+    <main class="selecao-perfis">
+      <header>
+        <h1>Quem está assistindo?</h1>
+      </header>
+
+      <section aria-label="Seleção de perfis">
+        <ul class="lista-perfis">
+          <li>
+            <article class="perfil">
+              <img src="./assets/perfil01.png" alt="Perfil do usuário 1" />
+              <h2>Perfil 1</h2>
+            </article>
+          </li>
+
+          <li>
+            <article class="perfil">
+              <img src="./assets/perfil02.png" alt="Perfil do usuário 2" />
+              <h2>Perfil 2</h2>
+            </article>
+          </li>
+
+          <li>
+            <article class="perfil">
+              <img
+                src="./assets/perfil-infantil.png"
+                alt="Perfil do usuário 3"
+              />
+              <h2>Perfil 3</h2>
+            </article>
+          </li>
+
+          <li>
+            <article class="perfil">
+              <img src="./assets/perfil4.avif" alt="Perfil do usuário 4" />
+              <h2>Perfil 4</h2>
+            </article>
+          </li>
+        </ul>
       </section>
+      <div class="gerenciar-perfis">
+        <p>Gerenciar Perfis</p>
+      </div>
     </main>
   </body>
 </html>
