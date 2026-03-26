@@ -144,3 +144,125 @@ img {
 .gerenciar-perfis:hover > p {
   color: #fff;
 }
+
+.geren-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
+  max-width: 250px;
+
+  margin: 0 0.5em;
+  border-radius: 8px;
+}
+
+/* container */
+.geren-p {
+  cursor: pointer;
+}
+
+/* animações */
+.img-hover {
+  transition: 0.3s;
+}
+
+/* mantém o mesmo tamanho dos outros perfis */
+.img-hover {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+/* 🔥 diminui só a imagem interna */
+.img-hover img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.geren-p h2 {
+  transition: 0.3s;
+}
+
+/* HOVER GLOBAL 
+
+.geren-p:hover .img-hover -> Porque ele busca em qualquer nível
+.geren-p:hover > .img-hover -> Busca filho direto
+*/
+
+.geren-p:hover .img-hover {
+  /* Quando o mouse estiver sobre .geren-p, selecione .img-hover que está dentro dele */
+  background-color: #fff;
+}
+
+/* muda o texto junto */
+.geren-p:hover h2 {
+  color: #fff;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* TABLET */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  .lista-perfis {
+    max-width: 500px;
+    margin: 20px auto;
+    justify-content: center;
+  }
+
+  .perfil {
+    flex: 1 1 calc(50% - 1rem); /* 2 por linha */
+    max-width: 200px;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 6vw;
+  }
+
+  .lista-perfis {
+    max-width: 300px;
+    gap: 0.8rem;
+  }
+
+  .perfil {
+    flex: 1 1 calc(50% - 0.8rem); /* continua 2 por linha */
+    max-width: 140px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .gerenciar-perfis {
+    width: 10rem;
+    padding: 10px;
+  }
+}
